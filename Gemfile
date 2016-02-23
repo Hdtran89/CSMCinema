@@ -37,7 +37,7 @@ gem "mail_form", ">= 1.3.0"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
- 	gem 'therubyracer'
+ 	gem 'therubyracer', :platform => :ruby
 
   gem 'font-awesome-sass'
 group :development, :test do
