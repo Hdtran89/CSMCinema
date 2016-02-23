@@ -4,4 +4,5 @@ Rails.application.routes.draw do
     get "contact" => "csm#contact"
     get "videography" => "csm#videography"
     get "package" => "csm#package"
+  resources "contacts", only:[:add, :create]
 end
