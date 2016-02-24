@@ -1,3 +1,134 @@
 // Place all the styles related to the CSM controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face {
+  font-family: "Garamond";
+  src: url(/assets/fonts/EBGaramond08-Regular.ttf) format("truetype");
+}
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(119, 119, 119, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+		font-family: Garamond;
+    font-size: 26px;
+    background-color: rgba(5, 5, 5, 1);
+    border-width: 1px;
+    border-radius: 4px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(3, 3, 3, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(85, 85, 85, 1);
+    background-color: rgba(231, 231, 231, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #050505;
+}
+
+img
+{
+	width: 40%;
+	height: auto;
+}
+.navbar .navbar-nav {
+	display: inline-block;
+  float: none;
+  vertical-align: top;
+  margin: 0 auto;
+}
+#bottom{
+	font-family: Garamond;
+	height: 75px;
+	background: #000000;
+	color: #ffffff;
+	
+	#facebook{
+		font-family: Garamond;
+		color: #ffffff;
+		font-size: 20px;
+		padding-top: 10px;
+	}
+	a{
+		color: #ffffff;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #3b5998;
+	}
+	#copyright{
+		font-family: Garamond;
+		font-size: 14px;
+		padding-top: 10px;
+	}
+}
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+.h3{
+	font-family: Garamond;
+	font-size: 72px;
+	font-weight: bold;
+}
+.li{
+	font-family: Garamond;
+	font-size: 24px;
+}
+p{
+	font-family: Garamond;
+	font-size: 20px;
+}
+
+.h2 {
+	font-family: Garamond;
+	font-size: 40px;
+}
+.h4{
+	font-family: Garamond;
+	font-size: 30px;
+}
+#contactform {
+	margin:0 auto;
+	width: 300px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#home_about{
+	font-family: Garamond;
+	font-size: 24px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#main_video{
+	padding-bottom: 25px;
+}
+#other_video{
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+#about {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 30px;
+	font-family: Garamond;
+}
