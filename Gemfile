@@ -29,6 +29,8 @@ gem 'autoprefixer-rails'
 
 gem 'mail_form'
 gem 'simple_form'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -37,7 +39,7 @@ gem 'simple_form'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
- 	gem 'therubyracer'
+ 	gem 'therubyracer', :platform => :ruby
 
   gem 'font-awesome-sass'
   
