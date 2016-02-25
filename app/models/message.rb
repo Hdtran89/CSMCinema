@@ -1,19 +1,22 @@
-class Message < MailForm::Base
-  attribute :name,      :validate => true
-  attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
-  attribute :weddingdate, :validate =>true
-  attribute :location,  :validate =>true
-  attribute :guesscount, :validate =>true
-  attribute :coveragetype, :validate =>true
-  attribute :question,  :validate =>true
+class Message
+  include ActiveModel::Model
+  include ActiveModel::Conversion
+  include ActiveModel::Validations
 
-  # Declare the e-mail headers. It accepts anything the mail method
-  # in ActionMailer accepts.
-  def headers
-    {
-      :subject => %("#{name}"),
-      :to => "hdtran89@yahoo.com",
-      :from => %("#{name}" <#{email}>)
-    }
-  end
+  attr_accessor :name, :email, :weddingdate, :location, :guesscount, :package, :question
+
+  validates :name,
+    presence: true
+  validates :email,
+    presence: true
+  validates :location,
+    presence: true
+  validates :weddingdate,
+    presence: true
+  validates :guesscount,
+    presence: true
+  validates :package,
+    presence: true
+  validates :question,
+    presence: true
 end

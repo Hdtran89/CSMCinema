@@ -22,5 +22,19 @@ module CSMCinema
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    config.web_console.development_only = false
+#    config.action_mailer.smtp_settings = {
+#      address: "smtp.gmail.com",
+#      port: 587,
+#      domain: "<example.tld>",
+#      user_name: "<username>",
+#      password: "<password>",
+#      authentication: :plain,
+#      enable_starttls_auto: true
+#    }
+
+#    config.action_mailer.default_url_options = {
+#      host: "yourdomain.tld"
+#    }
   end
 end

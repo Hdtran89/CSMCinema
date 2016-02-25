@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   root "csm#index"
     get "about" => "csm#about"
-    get "contact" => "csm#contact"
     get "videography" => "csm#videography"
     get "package" => "csm#package"
-  resources "contacts", only:[:add, :create]
+    match '/contacts', to: 'contacts#new', via: 'get'
+		resources "contacts", only: [:new, :create]
+#  	get 'contact', to: 'messages#new', as: 'contact'
+#		post 'contact', to: 'messages#create'
 end

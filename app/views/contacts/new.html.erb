@@ -1,0 +1,40 @@
+<section class="success" id="contact">
+    <div class="container">
+        <div class="row">
+        	<div class="col-sm-1"></div>
+            <div class="col-sm-10 text-center">
+            	<div class="row">
+            		<h2></b> “HELLO, WE WOULD LOVE TO HEAR FROM YOU!” </h2>
+            		<h4> Thank you for your interest in CSM Cinema! Please provide us with as many details about your wedding so that we can better serve you.Thank you! </h4>
+
+								<h4>GIVE US A CALL</h4>
+
+								<h4><b>Thien:</b> 408-466-1029</h4>
+								<h4><b>Don:</b> 408-223-3543</h4>
+
+								<h4><b>Email:</b> csmcinema@gmail.com</h4>
+
+								<h4>YOU CAN CONTACT US BY USING THE FORM BELOW </h4>
+            	</div>
+            	<div class="row" id="contactform">
+								<%= simple_form_for @contact, url: contacts_path do |f| %>
+								  <fieldset class="form-group">
+								  	<%= f.label :name, "Full Name"%>
+								  	<%= f.text_field :name, class: "form-control", placeholder: "Jane Doe", :required => true %>
+								  </fieldset>
+								  <fieldset class="form-group">
+								  	<%= f.label :email, "Email"%>
+								  	<%= f.text_field :email, class: "form-control", placeholder: "JaneDoe@something.com", :required => true%>
+								  </fieldset>
+								  <fieldset class="form-group"> 
+								  	<%= f.label :question, "Question"%>
+								  	<%= f.text_field :question, class: "form-control", placeholder:"Ask us anything"%>
+								  </fieldset>
+								  <button type="submit" class="btn btn-primary ">Send Message</button>
+								<% end %>
+							</div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+</section>
