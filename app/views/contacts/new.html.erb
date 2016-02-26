@@ -20,13 +20,29 @@
 								<%= simple_form_for @contact, url: contacts_path do |f| %>
 								  <fieldset class="form-group">
 								  	<%= f.label :name, "Full Name"%>
-								  	<%= f.text_field :name, class: "form-control", placeholder: "Jane Doe", :required => true %>
+								  	<%= f.text_field :name, class: "form-control", placeholder: "Jane Doe"%>
 								  </fieldset>
 								  <fieldset class="form-group">
 								  	<%= f.label :email, "Email"%>
-								  	<%= f.text_field :email, class: "form-control", placeholder: "JaneDoe@something.com", :required => true%>
+								  	<%= f.text_field :email, class: "form-control", placeholder: "JaneDoe@something.com"%>
 								  </fieldset>
-								  <fieldset class="form-group"> 
+								  <fieldset class="form-group">
+								  	<%= f.label :weddingdate, "Wedding/Event Date"%>
+								  	<%= f.text_field :weddingdate, class: "form-control", placeholder: "MM/DD/YYYY"%>
+								  </fieldset>
+								  <fieldset class="form-group">
+								  	<%= f.label :location, "Location"%>
+								  	<%= f.text_field :location, class: "form-control", placeholder: "Address"%>
+								  </fieldset>
+								  <fieldset class="form-group">
+								  	<%= f.label :guesscount, "Guess Count"%>
+								  	<%= f.text_field :guesscount, class: "form-control", placeholder: "some number" %>
+								  </fieldset>
+								  <fieldset>
+								  	<%= f.label :package, "Package"%>
+								  	<%= f.select :package, options_for_select([['Classic Package','Classic Package'],['Premium Package','Premium Package'], ['Custom Package','Custom Package']], params[:package]),{}, class: "form-control"%>
+								  </fieldset>
+								  <fieldset class="form-group">
 								  	<%= f.label :question, "Question"%>
 								  	<%= f.text_field :question, class: "form-control", placeholder:"Ask us anything"%>
 								  </fieldset>
